@@ -2,6 +2,8 @@
 
 namespace Jundayw\LaravelPolicy\Support;
 
+use Illuminate\Support\Str;
+
 trait NamespaceControllerActionNameTrait
 {
     /**
@@ -14,12 +16,6 @@ trait NamespaceControllerActionNameTrait
             return null;
         }
 
-        $controller = app('request')->route()->getAction('controller');
-
-        $controller = array_map(function($item) {
-            return strtolower($item);
-        }, array_slice(explode('\\', str_replace('Controller@', '\\', $controller)), 3));
-
-        return implode($delimiter, $controller);
+        return app('request')->route()->getName();
     }
 }

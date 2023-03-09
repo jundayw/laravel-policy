@@ -5,6 +5,7 @@ namespace Jundayw\LaravelPolicy\Policies;
 use BadMethodCallException;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 
 class Policy
 {
@@ -25,6 +26,8 @@ class Policy
         if (app('config')->get('policy.enabled') === false) {
             return true;
         }
+
+        $method = Str::kebab($method);
 
         $instance       = Arr::first($arguments);
         $instanceClass  = get_class($instance);
