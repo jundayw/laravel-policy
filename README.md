@@ -8,7 +8,6 @@ composer require jundayw/laravel-policy
 
 [![Latest Stable Version](https://poser.pugx.org/jundayw/laravel-policy/v)](https://packagist.org/packages/jundayw/laravel-policy)
 [![Total Downloads](https://poser.pugx.org/jundayw/laravel-policy/downloads)](https://packagist.org/packages/jundayw/laravel-policy)
-[![Latest Stable Version](https://poser.pugx.org/jundayw/laravel-policy/v)](https://packagist.org/packages/jundayw/laravel-policy)
 [![Latest Unstable Version](https://poser.pugx.org/jundayw/laravel-policy/v/unstable)](https://packagist.org/packages/jundayw/laravel-policy)
 [![License](https://poser.pugx.org/jundayw/laravel-policy/license)](https://packagist.org/packages/jundayw/laravel-policy)
 [![PHP Version Require](https://poser.pugx.org/jundayw/laravel-policy/require/php)](https://packagist.org/packages/jundayw/laravel-policy)
